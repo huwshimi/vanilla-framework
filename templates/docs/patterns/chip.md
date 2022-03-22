@@ -30,6 +30,12 @@ Chips have the option to be dismissed by including a button with a `p-chip__dism
 View example of the dismiss chip pattern
 </a></div>
 
+If you need to be able to interact with the chip as well as allowing it to be dismissed you can give the `span` the appropriate attributes.
+
+<div class="embedded-example"><a href="/docs/examples/patterns/chip/interactive-with-dismiss" class="js-example">
+View example of the interactable dismiss chip pattern
+</a></div>
+
 ## Dense chips
 
 If you need to place a chip in a dense context, use the class `is-dense` to reduce the padding and overall height of the chip:

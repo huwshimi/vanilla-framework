@@ -86,10 +86,12 @@
       @include vf-chip-light-theme;
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip,
     button.p-chip {
       @include vf-chip-dark-theme($is-interactive: true);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip.is-light,
     button.p-chip.is-light {
       @include vf-chip-light-theme($is-interactive: true);
     }
@@ -101,10 +103,12 @@
       @include vf-chip-light-theme(positive);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--positive,
     button.p-chip--positive {
       @include vf-chip-dark-theme($chip-type: positive, $is-interactive: true);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--positive.is-light,
     button.p-chip--positive.is-light {
       @include vf-chip-light-theme($chip-type: positive, $is-interactive: true);
     }
@@ -116,10 +120,12 @@
       @include vf-chip-light-theme(caution);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--caution,
     button.p-chip--caution {
       @include vf-chip-dark-theme($chip-type: caution, $is-interactive: true);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--caution.is-light,
     button.p-chip--caution.is-light {
       @include vf-chip-light-theme($chip-type: caution, $is-interactive: true);
     }
@@ -131,10 +137,12 @@
       @include vf-chip-light-theme(negative);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--negative,
     button.p-chip--negative {
       @include vf-chip-dark-theme($chip-type: negative, $is-interactive: true);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--negative.is-light,
     button.p-chip--negative.is-light {
       @include vf-chip-light-theme($chip-type: negative, $is-interactive: true);
     }
@@ -146,10 +154,12 @@
       @include vf-chip-light-theme(information);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--information,
     button.p-chip--information {
       @include vf-chip-dark-theme($chip-type: information, $is-interactive: true);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--information.is-light,
     button.p-chip--information.is-light {
       @include vf-chip-light-theme($chip-type: information, $is-interactive: true);
     }
@@ -161,10 +171,12 @@
       @include vf-chip-dark-theme;
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip,
     button.p-chip {
       @include vf-chip-light-theme($is-interactive: true);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip.is-dark,
     button.p-chip.is-dark {
       @include vf-chip-dark-theme($is-interactive: true);
     }
@@ -176,10 +188,12 @@
       @include vf-chip-dark-theme(positive);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--positive,
     button.p-chip--positive {
       @include vf-chip-light-theme($chip-type: positive, $is-interactive: true);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--positive.is-dark,
     button.p-chip--positive.is-dark {
       @include vf-chip-dark-theme($chip-type: positive, $is-interactive: true);
     }
@@ -191,10 +205,12 @@
       @include vf-chip-dark-theme(caution);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--caution,
     button.p-chip--caution {
       @include vf-chip-light-theme($chip-type: caution, $is-interactive: true);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--caution.is-dark,
     button.p-chip--caution.is-dark {
       @include vf-chip-dark-theme($chip-type: caution, $is-interactive: true);
     }
@@ -206,10 +222,12 @@
       @include vf-chip-dark-theme(negative);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--negative,
     button.p-chip--negative {
       @include vf-chip-light-theme($chip-type: negative, $is-interactive: true);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--negative.is-dark,
     button.p-chip--negative.is-dark {
       @include vf-chip-dark-theme($chip-type: negative, $is-interactive: true);
     }
@@ -221,10 +239,12 @@
       @include vf-chip-dark-theme(information);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--information,
     button.p-chip--information {
       @include vf-chip-light-theme($chip-type: information, $is-interactive: true);
     }
     // stylelint-disable-next-line selector-max-type
+    [role="button"].p-chip--information.is-dark,
     button.p-chip--information.is-dark {
       @include vf-chip-dark-theme($chip-type: information, $is-interactive: true);
     }
@@ -256,6 +276,8 @@
     &:hover {
       background-color: $color-background-hover;
       border-color: $color-border;
+      // Required for dismissible chips using a span instead of a button.
+      cursor: pointer;
     }
     &[aria-pressed='true'],
     &.is-selected,
